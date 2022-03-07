@@ -26,7 +26,7 @@ jobs:
         run: python main.py
 
         env:
-          APP_ID: ${{ secrets.APP_ID }}
+          API_ID: ${{ secrets.API_ID }}
           API_HASH: ${{ secrets.API_HASH }}
           BOTS: ${{ secrets.BOTS }}
           SESSION: ${{ secrets.SESSION }}
