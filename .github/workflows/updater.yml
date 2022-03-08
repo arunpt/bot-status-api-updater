@@ -23,8 +23,6 @@ jobs:
           path: "requirements.txt"
 
       - name: Run updater script
-        run: python main.py
-
         env:
           API_ID: ${{ secrets.API_ID }}
           API_HASH: ${{ secrets.API_HASH }}
@@ -32,3 +30,5 @@ jobs:
           SESSION: ${{ secrets.SESSION }}
           API_KEY: ${{ secrets.API_KEY }}
           ENDPOINT: ${{ secrets.ENDPOINT }}
+
+        run: python main.py
